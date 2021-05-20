@@ -115,11 +115,11 @@ dirb http://10.10.10.10/ -u username:pass
 
 
 **Advanced Google Searches**
-site:
-intitle:
-inurl:
-filetype:
-AND, OR, &, |, -
+`site:`
+`intitle:`
+`inurl:`
+`filetype:`
+`AND, OR, &, |, -`
 
 ------------
 
@@ -127,9 +127,12 @@ AND, OR, &, |, -
 **Cross Site Scripting (XSS)**
 Steps:
 1. Find a reflection point
-2. Test with <i> tag
-3. Test with HTML/JavaScript code (alert('XSS'))
-Reflected XSS = Payload is carried inside the request the victim sends to the website. Typically the link contains the malicious payload
+2. Test with `<i>` tag
+3. Test with HTML/JavaScript code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<script>alert(1)</script>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Reflected XSS:  Payload is carried inside the request the victim sends to the website. Typically the link contains the malicious payload
 Persistent XSS = Payload remains in the site that multiple users can fall victim to. Typically embedded via a form or forum post
 
 ------------
@@ -158,10 +161,6 @@ sqlmap -u http://10.10.10.10 --dump
 
 
 ------------
-
-
-**System Attacks**
-The other type of ‘attack’ you will be doing are system attacks. Make sure you understand why/how to brute force types of services and hashes, as well as basic metasploit usage.
 
 **Password Attacks**
 Unshadow
@@ -252,8 +251,6 @@ SET X (e.g. set RHOST 10.10.10.10, set payload x)
 
 
 **Meterpreter**
-
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 background
 
