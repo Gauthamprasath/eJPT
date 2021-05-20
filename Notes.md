@@ -1,4 +1,5 @@
 ## eJPT Notes
+**This notes will gide you through all the commands and tools which are given in the official eJPT material. Make sure to replace the ip addresses and port numbers when you use it**
 **Routing**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ip route add ROUTETO via ROUTEFROM
