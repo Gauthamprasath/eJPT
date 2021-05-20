@@ -132,8 +132,10 @@ Steps:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <script>alert(1)</script>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Reflected XSS:  Payload is carried inside the request the victim sends to the website. Typically the link contains the malicious payload
-Persistent XSS = Payload remains in the site that multiple users can fall victim to. Typically embedded via a form or forum post
+**Reflected XSS:**
+Payload is carried inside the request the victim sends to the website. Typically the link contains the malicious payload
+**Persistent XSS:**
+Payload remains in the site that multiple users can fall victim to. Typically embedded via a form or forum post
 
 ------------
 
@@ -204,12 +206,12 @@ hydra -L users.txt -P pass.txt telnet://10.10.10.10
 nmblookup -A 10.10.10.10
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-(list shares)
+**List shares**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 smbclient -L //10.10.10.10 -N
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- (mount share)
+**Mount share:**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 smbclient //10.10.10.10/share -N
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
