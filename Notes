@@ -1,8 +1,8 @@
 Routing
 
-~~~
+```
 ip route add ROUTETO via ROUTEFROM
-~~~
+```
 
 whois
 
