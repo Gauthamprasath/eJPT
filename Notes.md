@@ -1,5 +1,5 @@
 ## eJPT Notes
-**This notes will guide you through all the tools which are given in the official eJPT material. Make sure to replace the ip addresses and port numbers when you use it**
+**This will guide you through all the tools which will be helpful for your preparation and the exam. Make sure to replace the ip addresses and port numbers when you use it**
 
 ------------
 **Routing**
@@ -36,22 +36,22 @@ nmap -sn 10.10.10.0/24
 **Nmap Scans**
 **OS Detection**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-nmap -Pn -O 10.10.10.10
+nmap -Pn -O -T4 10.10.10.10
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Nmap Scan (Quick)**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-nmap -sC -sV 10.10.10.10
+nmap -sC -sV -T4 10.10.10.10
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Nmap Scan (Full)**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-nmap -sC -sV -p- 10.10.10.10
+nmap -sC -sV -T4 -p- 10.10.10.10
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Nmap Scan (UDP Quick)**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-nmap -sU -sV 10.10.10.10
+nmap -sU -sV -T4 10.10.10.10
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ------------
